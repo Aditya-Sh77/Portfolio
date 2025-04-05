@@ -17,7 +17,7 @@ function addRecommendation() {
     recommendation.value = "";
   }
 }
-
+/*
 document.addEventListener("scroll", changeColour);
 function changeColour(){
   let i = 0;
@@ -26,7 +26,7 @@ function changeColour(){
     document.getElementsByTagName("h3")[0].style.color = "#"+co;
     i++;
   }
-}
+}*/
 
 function showPopup(bool) {
   if (bool) {
