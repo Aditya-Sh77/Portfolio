@@ -1,24 +1,37 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-image: url("bg-body2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Navigation Bar */
+i{
+  margin-right: 7px;;
+}
 
+a{
+
+  text-decoration: none;
+  color: aliceblue;
+}
 #home {
-  background-color:  #7600bc;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
+  backdrop-filter: blur(10px);
+  padding-top: 1%;
+  color: white;  
+  height: 80px;
+  border: none;
+  position: fixed;
+  width: 100%;
  }
+
 
 .topmenu {
   color: lightgray;
-  margin: 10px;
-  padding: 20px;
+  padding: 20px; 
   font-size: 20px;
   text-decoration:none;
 }
@@ -26,17 +39,25 @@ body {
 .topmenu:hover {
   color: white;
   /* Add the styles here */
+  border: #fff solid 3px;
+  border-radius: 5px;
 }
 
 .topdiv {
   float: right;
+  margin-top: 20px;
   padding-right: 1cm;
 }
 
 .profile_name {
+
+  font-size: 1.1rem;
   float: left;
-  padding-left: 2cm;
+  padding-top: 0.5%;
+  padding-left: 2%;
   /* Add the styles here */
+  line-height: 150%;
+  
 }
 
 .profile_name .contact_info {
@@ -47,8 +68,8 @@ body {
   flex-direction: row;
 }
 
-.contact_info img {
-  width:25px;
+.contact_info {
+  margin-bottom: 5px;
   margin-right: 10px;
   float:left;
 }
@@ -60,10 +81,10 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #7600bc;
+  color: #7df9cb;
   margin: 30px;
   margin-left: 60px;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 0px;
 }
 
@@ -72,7 +93,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   float: left;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 20px;
   animation-duration: 5s;
   position: relative;
@@ -81,6 +102,8 @@ h2 {
 /* Used in the About Me sections */
 
 .container {
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
 }
 
@@ -92,15 +115,16 @@ h2 {
 }
 
 #about-me h1 {
+
   font-size: 65px;
-  margin-top: 90px;
-  color: #7600bc;
+  margin-top: 100px;
+  color: #7df9cb;
 }
 
 #about-me p {
   font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  color: rgb(255, 255, 255);
+  
 }
 
 .profile_image {
@@ -112,13 +136,21 @@ h2 {
 
 /* Skills */
 
+.skill-icon{
+
+  color: #ffffff;
+  font-size: 70px;
+  margin-right: 10px;
+}
 .all_skills {
+  color: #fff;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
 }
 
 .skill {
+  padding-top: 20px;
   border: 1px solid gray;
   display: block;
   border-radius: 6px;
@@ -145,7 +177,7 @@ h2 {
 
 .skills p {
   align-items: center;
-  font-size: 15px;
+  font-size: 30px;
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
@@ -157,6 +189,23 @@ h2 {
   justify-content: center;
 }
 
+#all_education{
+  margin: 0 0 60px 60px;
+  display: flex;
+}
+.education{
+  color: #ffffff;
+  margin: 10px;
+  width: 220px;
+  padding: 10px;
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+
 /* Projects */
 
 .projects-container {
@@ -166,26 +215,28 @@ h2 {
 
 .projects-container hr {
   border: 1px solid lightgray;
-  width: 75%;
-  margin-left: 5cm;
+  margin-left: 0px;
+  width: 90%;
 }
 
-.project-card {
+.project-card{
+  color: antiquewhite;
   margin: 0 15px 15px 30px;
   padding-bottom: 5px;
+  
 }
 
 .project-card h3 {
   font-size: 25px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .project-card li {
+  text-indent: 0%;
   font-size: 20px;
   margin-left: 30px;
 }
-
-/* Recommendations */
+/* Recommendations 
 
 .all_recommendations {
   display: flex;
@@ -212,18 +263,18 @@ h2 {
 }
 
 .recommendation span {
-  color: #7600bc;
+  color: #a9f619;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 /* Scroll to Top Button */
-
+/*
 .iconbutton{
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #7600bc;
+  background-color: #a9f619;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,7 +284,7 @@ h2 {
   cursor: pointer;
 }
 
-/* Form Pop-up */
+/* Form Pop-up 
 
 .popup {
   width:400px;
@@ -244,7 +295,7 @@ h2 {
   transform: translate(-50%,-50%);
   text-align: center;
   position: fixed;
-  /* padding: 30px; */
+  /* padding: 30px; 
   visibility: hidden;
 }
 
@@ -254,8 +305,8 @@ h2 {
 
 .popup button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid #a9f619;
+  color: #a9f619;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -268,8 +319,8 @@ h2 {
 
 .popup button:hover {
   background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
+  border: 2px solid #a9f619;
+  color: #a9f619;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -277,7 +328,7 @@ h2 {
   margin-left: 25%;
 }
 
-/* Recommendation Form */
+/* Recommendation Form 
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
@@ -285,18 +336,9 @@ input, textarea {
   width:100%;
 }
 
-fieldset {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
-  border: thin solid white;
-  width: 50%;
-}
 
-/* Buttons */
+
+/* Buttons 
 
 button {
   background-color: #fff;
@@ -319,4 +361,19 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+} 
+*/
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+}
+
+.contact{
+  float: left;
 }
