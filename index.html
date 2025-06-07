@@ -15,23 +15,16 @@
       <div id="home">
         <div class="profile_name">
           
-          <a href = "/index.html" style="color:aliceblue; text-decoration: none"><i class="fa-solid fa-user"></i>Aditya Sharma</a>
+          <a href = "/index.html" ><i class="fa-solid fa-user"></i>Aditya Sharma</a>
           <div>
-            <a href = "https://github.com/Aditya-Sh77" target="_blank" style="color:aliceblue; text-decoration: none"><i class="fa-brands fa-github"></i></a>
             <a href = "https://www.linkedin.com/in/aditya-sharma-07a909290/" target="_blank" style="color:aliceblue; text-decoration: none"><i class="fa-brands fa-linkedin"></i></a>
-            <a href = "https://leetcode.com/u/Aditya-Sh77/" target="_blank" style="color:aliceblue; text-decoration: none"><img src = "lt.svg" width = "15px" height="17px" style="margin-right: 2px;"/></a>
-            <a href = "https://www.hackerrank.com/profile/aditya_sh775" target="_blank" style="color:aliceblue; text-decoration: none"><i class="fab fa-hackerrank"></i></a>
             <a href = "https://www.instagram.com/adi_sh.7/" target="_blank" style="color:aliceblue; text-decoration: none"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
         <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-           <a class="topmenu" href = "#skills">Skills</a>
-           <a class = "topmenu" href="#education">Education</a>
-           <a class="topmenu" href="#projects">Projects</a>
-           <a class="topmenu" href="#contact">Contact</a>
-
+          <a class="topmenu" href="https://leetcode.com/u/Aditya-Sh77/" target="_blank"><img src = "lt.svg" width = "4.2%" height="4.2%" style="margin-right: 2px;"/> Leetcode</a>
+           <a class="topmenu" href = "https://www.hackerrank.com/profile/aditya_sh775" target="_blank"><i class="fab fa-hackerrank"></i>HackerRank</a>
+           <a class = "topmenu" href="https://github.com/Aditya-Sh77" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
         </div>
       </div>    
     </nav>
@@ -41,87 +34,113 @@
 
       <div class="about_section">
           <h1>
-            Hi, I'm Aditya Sharma! <img src="/waving-hand.png" width="60px"/>
+            Hi, I'm Aditya Sharma! 
           </h1>
-          <p>
-            I'm a B.Tech student at NIT Calicut (2027) with a passion for building secure and scalable tech solutions.</br> 
-            I enjoy coding in Python, C++, Java, and working with SQL, DSA, and OOP. <br>
-            With certifications in Cybersecurity (Google) and Machine Learning (DeepLearning.AI).</br>
-            I’ve built projects across software development, data analysis, and embedded systems.</br>
-            I’m also familiar with tools like Git, Wireshark, Splunk, and TCPDump.<br>
-
+          <p id = 'about_me_text'>
+            I’m a B.Tech student at NIT Calicut (2027) with a minor in Cyber Physical Systems and a drive to build secure, scalable, and impactful tech.<br>
+            I enjoy working across the stack using Python, C++, Java, SQL, and React, and have hands-on experience in machine learning, data analysis, and frontend development.<br>
+            Certified in Cybersecurity by Google and in Machine Learning by DeepLearning.AI.<br>
+            I’ve worked on projects like a stroke prediction app, invoice generator, and an embedded stopwatch system — combining practical utility with clean execution.<br>
           </p>
       </div>
     </section>
               
-    <!-- Skills -->
+   <!-- Skills -->
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Skills<br></h2>
       <div style="clear:both;"></div>
+      <div class="domain-bar" aria-label="Skill Domains">
+        <ul class="domain-list">
+          <li class="domain-item" tabindex="0">
+            <button class="domain-button" onclick="toggleDropdown(this)">👨‍💻 Coding/Languages</button>
+            <ul class="skills-dropdown" role="menu">
+              <li role="menuitem">C/C++</li>
+              <li role="menuitem">Java</li>
+              <li role="menuitem">Python</li>
+              <li role="menuitem">Data Structures</li>
+              <li role="menuitem">Competitive Programming</li>
+              <li role="menuitem">Git/Github</li>
 
-      <div class="all_skills">
-        <div class="skill">
-          <i class="fa-brands fa-html5 skill-icon"></i>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
+            </ul>
+          </li>  
+          <li class="domain-item" tabindex="0">
+            <button class="domain-button" onclick="toggleDropdown(this)">🌐 Web Development</button>
+            <ul class="skills-dropdown" role="menu">
+              <li role="menuitem">React</li>
+              <li role="menuitem">HTML</li>
+              <li role="menuitem">CSS</li>
+              <li role="menuitem">JavaScript</li>
+            </ul>
+          </li>
 
-        <div class="skill">
-          <i class="fa-brands fa-js  skill-icon"></i>
-          <h6>JavaScript</h6>
-          <p>1 years experience</p>
-        </div>  
+          <li class="domain-item" tabindex="0">
+            <button class="domain-button" onclick="toggleDropdown(this)">📊 Data Science</button>
+            <ul class="skills-dropdown" role="menu">
+              <li role="menuitem">Pandas</li>
+              <li role="menuitem">NumPy</li>
+              <li role="menuitem">Matplotlib / Seaborn </li>
+              <li role="menuitem">SQL</li>
+              <li role="menuitem">scikit-learn</li>
+              <li role="menuitem">Inferential Analytics</li>
+            </ul>
+          </li>
 
-        <!-- Add more skills here -->
-         <div class = "skill">
-          <i class="fa-brands fa-python skill-icon"></i>
-          <h6>Python</h6>
-          <p>5 years experience</p>
-         </div>
+          <li class="domain-item" tabindex="0">
+            <button class="domain-button" onclick="toggleDropdown(this)">🔐 Cybersecurity</button>
+            <ul class="skills-dropdown" role="menu">
+              <li role="menuitem">Nmap</li>
+              <li role="menuitem">Tcpdump</li>
+              <li role="menuitem">Wireshark</li>
+              <li role="menuitem">Kali Linux</li>
+    
+            </ul>
+          </li>
 
-         <div class = "skill">
-          <i class="fa-brands fa-java skill-icon" ></i>
-          <h6>Java</h6>
-          <p>2 years experience</p>
-         </div>
-
-
+          <li class="domain-item" tabindex="0">
+            <button class="domain-button" onclick="toggleDropdown(this)">🛠️ Embedded Systems</button>
+            <ul class="skills-dropdown" role="menu">
+              <li role="menuitem">Arduino</li>
+              <li role="menuitem">Assembly</li>
+              <li role="menuitem">C</li>
+            </ul>
+          </li>
+          
+        </ul>
       </div>
     </section>
 
+
     <section id = "education">
-      <h2>Education & Certifications</h2>
+      <h2>Education & Certifications<br></h2>
       <div style="clear:both;"></div>
 
       <div id = "all_education">
-        <div class = "education">
+        <div class = "edu">
           <h3>B.Tech</h3>
-          <p>2023 - 2027</p>
-          <p>National Institute of Technology, Calicut</p>
-          <p>Major: Electrical and Electronics Engineering</p>
-          <p>Minor: Cyber Physical Systems</p>
-          <p>CGPA: 8.69 (upto 3rd Sem)</p>
+          <p>2023 - 2027<br><br>
+          National Institute of Technology, Calicut<br><br>
+          CGPA: 8.50</p>
         </div>
-        <div class = "education">
+        <div class = "edu">
           <h3>10th CBSE</h3>
           <p>2018 - 2020</p>
-          <p>Nilgiri Hills Public School, Noida</p>
+          <p>NHPS, Noida</p>
           <p>Percentage: 95.6%</p>
         </div>
-        <div class = "education">
+        <div class = "edu">
           <h3>12th CBSE</h3>
           <p>2020 - 2022</p>
-          <p>Nilgiri Hills Public School, Noida</p>
+          <p>NHPS, Noida</p>
           <p>Percentage: 96.2%</p>
         </div>
-        <div class = "education">
+        <div class = "edu">
           <a href = "https://coursera.org/share/a7ceccff516084c65e1bb51d8e8c6699" target="_blank" style="color: aliceblue; text-decoration: none"></a>
           <h3>Cybersecurity</h3>
           <p>2023</p>
           <p>Google</p>
           <p>Google Cybersecurity Professional Certificate</p>  
         </div>
-        <div class = "education">
+        <div class = "edu">
           <a href = "https://coursera.org/share/1e9ca6ffa836c2ecba6f11b822677dea" target="_blank" style="color: aliceblue; text-decoration: none" ></a>
           <h3>Machine Learning</h3>
           <p>2024</p>
@@ -141,6 +160,15 @@
         <div id="projects-container" class="projects-container">
           <hr>
           <div class="project-card">
+            <h3>Stroke Prediction Model </h3>
+            <ul marker="disc" size = "3">
+              <li>Developed a stroke prediction model using Python (Pandas, Matplotlib, Seaborn, Scikit-learn).</li>
+              <li>Utilized various machine learning algorithms to train and evaluate the model.</li>
+              <li>Deployed the model as a web application using Streamlit.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
             <h3>Pradhan Mantri Gram Sadak Yojana (PMGSY) Data Analysis</h3>
             <ul marker="disc" size = "3">
               <li>Analyzed PMGSY data to evaluate rural and urban road connectivity and development and its socio-economic impacts.</li>
@@ -154,9 +182,11 @@
             <ul>
               <li>Designed and implemented a stopwatch using the PIC18F452 microcontroller and an LCD display.</li>
               <li>Programmed the microcontroller for time measurement and display functionalities.</li>
+              <li>Used tools like Micro-C and MPLAB for debug and programming.</li>
             </ul>
           </div>
           <hr>
+          <a id = "view_more" href="https://github.com/Aditya775" target="_blank" >View more projects on GitHub </a>
     </div>
     </section>
     <div style="clear:both;"></div>

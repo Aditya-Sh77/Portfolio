@@ -19,44 +19,46 @@ a{
   color: aliceblue;
 }
 #home {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   padding-top: 1%;
   color: white;  
-  height: 80px;
+  height: 10%;
   border: none;
   position: fixed;
   width: 100%;
+  z-index: 1000;
  }
 
 
 .topmenu {
   color: lightgray;
   padding: 20px; 
-  font-size: 20px;
+  font-size: 2.5rem;
   text-decoration:none;
 }
 
 .topmenu:hover {
   color: white;
-  /* Add the styles here */
+
   border: #fff solid 3px;
   border-radius: 5px;
 }
 
 .topdiv {
+  width: 30%;
   float: right;
   margin-top: 20px;
-  padding-right: 1cm;
+  margin-right: none;
 }
 
 .profile_name {
 
-  font-size: 1.1rem;
+  font-size: 2.5rem;
   float: left;
   padding-top: 0.5%;
-  padding-left: 2%;
-  /* Add the styles here */
-  line-height: 150%;
+  padding-left: 3%;
+ 
+  line-height: 120%;
   
 }
 
@@ -78,23 +80,23 @@ a{
 
 h2 {
   text-align: justify;
-  font-size: 50px;
+  font-size: 4rem;
   text-align: center;
   float: left;
   color: #7df9cb;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 60px;
-  margin-bottom: 0px;
+  margin: 4%;
+  margin-left: 3%;
+  margin-top: 4%;
+  margin-bottom: 2%;
 }
 
 .introduction {
   text-align: justify;
-  font-size: 30px;
+  font-size: 7.5rem;
   text-align: center;
   float: left;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 10%;
+  margin-bottom: 5%;
   animation-duration: 5s;
   position: relative;
 }
@@ -102,8 +104,8 @@ h2 {
 /* Used in the About Me sections */
 
 .container {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3%;
+  margin-right: 10%;
   display: flex;
 }
 
@@ -114,18 +116,36 @@ h2 {
   align-items: center;
 }
 
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 #about-me h1 {
 
-  font-size: 65px;
-  margin-top: 100px;
+  font-size: 7.5rem;
+  margin-top: 10%;
   color: #7df9cb;
+  animation: fadeSlideIn 1.8s ease-out forwards;
+  opacity: 0;
 }
 
-#about-me p {
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-  
+#about_me_text {
+  font-size: 2rem;
+  width: 100%;
+  color: white;
+  animation: fadeSlideIn 1.8s ease-out forwards 1s;
+  opacity: 0;
 }
+
+
 
 .profile_image {
   width: 550px;
@@ -134,75 +154,86 @@ h2 {
   margin: 5px;
 }
 
-/* Skills */
-
-.skill-icon{
-
-  color: #ffffff;
-  font-size: 70px;
-  margin-right: 10px;
+/* Container */
+.domain-bar {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 2rem;
+  padding-left: 5%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-radius: 20px;
 }
-.all_skills {
+
+/* List */
+.domain-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+}
+
+/* Buttons */
+.domain-button {
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  font-size: 2.2rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s, background 0.3s;
 }
 
-.skill {
-  padding-top: 20px;
-  border: 1px solid gray;
-  display: block;
+.domain-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Dropdown */
+.skills-dropdown {
+  display: none;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.4s ease;
+}
+
+.skills-dropdown li {
+  padding: 6px 12px;
+  font-size: 2rem;
+  color: #fff;
   border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  transition: background 0.5s;
 }
 
-.skill img {
-  height: 35px;
-  align-items: center;
+.skills-dropdown li:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.skills h6 {
-  align-items: center;
-  font-size: 20px;
-  margin-block-start: 8px;
-  margin-block-end: 5px;
-  font-weight: bold;
-} 
-
-.skills p {
-  align-items: center;
-  font-size: 30px;
-  color: gray;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
-} 
-
-.flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* Education */
 
 #all_education{
-  margin: 0 0 60px 60px;
+  margin: 3% 3% 3% 3%;
   display: flex;
 }
-.education{
+.edu{
   color: #ffffff;
-  margin: 10px;
-  width: 220px;
-  padding: 10px;
-  border: 1px solid gray;
+  margin: 2%;
+  width: 20%;
+  padding: 2%;
+  border: 2px solid gray;
   display: block;
   border-radius: 6px;
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   box-shadow: 0 3px 10px gray;
 }
 
@@ -210,168 +241,50 @@ h2 {
 
 .projects-container {
   margin-top: 30px;
-  margin-left: 60px;
+  margin-left: 3%;
 }
 
 .projects-container hr {
-  border: 1px solid lightgray;
-  margin-left: 0px;
+  border: 2px solid lightgray;
+  margin-left: 2%;
   width: 90%;
 }
 
 .project-card{
   color: antiquewhite;
-  margin: 0 15px 15px 30px;
+  margin: 0 2% 1% 1%;
   padding-bottom: 5px;
   
 }
 
 .project-card h3 {
-  font-size: 25px;
-  margin-left: 0px;
+  font-size: 2.5rem;
+  margin-left: 2%;
 }
 
 .project-card li {
   text-indent: 0%;
-  font-size: 20px;
-  margin-left: 30px;
+  font-size: 2rem;
+  margin-left: 3%;
 }
-/* Recommendations 
-
-.all_recommendations {
-  display: flex;
-  align-items: center;
-  margin-left: 1in;
-  flex-direction: row;
-  flex-flow: wrap;
-  padding: 20px;
+#view_more{
+  color: aliceblue;
+  font-size: 2rem;
+  margin-left: 3%;
+  margin-top: 2%;
 }
-
-.recommendation {
-  font-style: italic;
-  text-align: left;
-  width: 21.875rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
-  border:1px solid gray;
-  font-size: 18px;
-  height:150px
-}
-
-.recommendation span {
-  color: #a9f619;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* Scroll to Top Button */
-/*
-.iconbutton{
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  background-color: #a9f619;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-/* Form Pop-up 
-
-.popup {
-  width:400px;
-  background-color: #e8bcf0;
-  border-radius: 3mm;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  position: fixed;
-  /* padding: 30px; 
-  visibility: hidden;
-}
-
-.popup img {
-  padding-top: 20px;
-}
-
-.popup button {
-  background-color: #fff;
-  border: 1px solid #a9f619;
-  color: #a9f619;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-  margin-left: 25%;
-}
-
-.popup button:hover {
-  background-color: #fff;
-  border: 2px solid #a9f619;
-  color: #a9f619;
-  display: block;
-  font-weight: bolder;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 25%;
-}
-
-/* Recommendation Form 
-
-input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
-}
-
-
-
-/* Buttons 
-
-button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-}
-
-button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
-  color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  cursor: pointer;
-} 
-*/
+/* Contact */
 fieldset {
   display: flexbox;
   align-content: center;
   justify-content: center;  
   padding: 25px; 
-  margin-left: 50px; 
+  margin-left: 4%; 
   margin-right: 50px;   
   border: thin solid white;
   width: 50%;
+  height: 10%;
+  font-size: 1.5rem;
 }
 
 .contact{
