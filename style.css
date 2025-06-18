@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+  font-size: 7px;
+}
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0px;
@@ -8,35 +12,38 @@ body {
   background-size: cover;
 }
 
-i {
-  margin-right: 7px;
+/* Navigation Bar */
+i{
+  margin-right: 7px;;
 }
 
-a {
+a{
+
   text-decoration: none;
   color: aliceblue;
 }
-
 #home {
   backdrop-filter: blur(20px);
   padding-top: 1%;
-  color: white;
+  color: white;  
   height: 10%;
   border: none;
   position: fixed;
   width: 100%;
   z-index: 1000;
-}
+ }
+
 
 .topmenu {
   color: lightgray;
-  padding: 20px;
-  font-size: 40px;
-  text-decoration: none;
+  padding: 20px; 
+  font-size: 2.5rem;
+  text-decoration:none;
 }
 
 .topmenu:hover {
   color: white;
+
   border: #fff solid 3px;
   border-radius: 5px;
 }
@@ -49,11 +56,14 @@ a {
 }
 
 .profile_name {
-  font-size: 40px;
+
+  font-size: 2.5rem;
   float: left;
   padding-top: 0.5%;
   padding-left: 3%;
+ 
   line-height: 120%;
+  
 }
 
 .profile_name .contact_info {
@@ -67,12 +77,14 @@ a {
 .contact_info {
   margin-bottom: 5px;
   margin-right: 10px;
-  float: left;
+  float:left;
 }
+
+/* Titles */
 
 h2 {
   text-align: justify;
-  font-size: 64px;
+  font-size: 4rem;
   text-align: center;
   float: left;
   color: #7df9cb;
@@ -84,7 +96,7 @@ h2 {
 
 .introduction {
   text-align: justify;
-  font-size: 120px;
+  font-size: 7.5rem;
   text-align: center;
   float: left;
   margin-top: 10%;
@@ -93,11 +105,15 @@ h2 {
   position: relative;
 }
 
+/* Used in the About Me sections */
+
 .container {
   margin-left: 3%;
   margin-right: 10%;
   display: flex;
 }
+
+/* About Me */
 
 .about-me {
   display: flex;
@@ -115,8 +131,10 @@ h2 {
   }
 }
 
+
 #about-me h1 {
-  font-size: 120px;
+
+  font-size: 9rem;
   margin-top: 10%;
   color: #7df9cb;
   animation: fadeSlideIn 1.8s ease-out forwards;
@@ -124,12 +142,14 @@ h2 {
 }
 
 #about_me_text {
-  font-size: 32px;
+  font-size: 2.5rem;
   width: 100%;
   color: white;
   animation: fadeSlideIn 1.8s ease-out forwards 1s;
   opacity: 0;
 }
+
+
 
 .profile_image {
   width: 550px;
@@ -138,10 +158,11 @@ h2 {
   margin: 5px;
 }
 
+/* Container */
 .domain-bar {
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.04);
-  padding: 32px;
+  padding: 2rem;
   padding-left: 5%;
   display: flex;
   justify-content: left;
@@ -149,6 +170,7 @@ h2 {
   border-radius: 20px;
 }
 
+/* List */
 .domain-list {
   list-style: none;
   display: flex;
@@ -159,11 +181,12 @@ h2 {
   margin: 0;
 }
 
+/* Buttons */
 .domain-button {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  font-size: 35px;
-  padding: 16px 24px;
+  font-size: 2.2rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -176,19 +199,20 @@ h2 {
   transform: scale(1.05);
 }
 
+/* Dropdown */
 .skills-dropdown {
   display: none;
   margin-top: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 12.8px 16px;
+  padding: 0.8rem 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: opacity 0.4s ease;
 }
 
 .skills-dropdown li {
   padding: 6px 12px;
-  font-size: 32px;
+  font-size: 2rem;
   color: #fff;
   border-radius: 6px;
   transition: background 0.5s;
@@ -198,12 +222,13 @@ h2 {
   background: rgba(255, 255, 255, 0.15);
 }
 
-#all_education {
+/* Education */
+
+#all_education{
   margin: 3% 3% 3% 3%;
   display: flex;
 }
-
-.edu {
+.edu{
   color: #ffffff;
   margin: 2%;
   width: 20%;
@@ -212,9 +237,11 @@ h2 {
   display: block;
   border-radius: 6px;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   box-shadow: 0 3px 10px gray;
 }
+
+/* Projects */
 
 .projects-container {
   margin-top: 30px;
@@ -227,43 +254,44 @@ h2 {
   width: 90%;
 }
 
-.project-card {
+.project-card{
   color: antiquewhite;
   margin: 0 2% 1% 1%;
   padding-bottom: 5px;
+  
 }
 
 .project-card h3 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-left: 2%;
 }
 
 .project-card li {
   text-indent: 0%;
-  font-size: 32px;
+  font-size: 2rem;
   margin-left: 3%;
 }
-
-#view_more {
+#view_more{
   color: aliceblue;
-  font-size: 32px;
+  font-size: 2rem;
   margin-left: 3%;
   margin-top: 2%;
 }
-
+/* Contact */
 fieldset {
   display: flexbox;
   align-content: center;
-  justify-content: center;
-  padding: 25px;
-  margin-left: 4%;
-  margin-right: 50px;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 4%; 
+  margin-right: 50px;   
   border: thin solid white;
   width: 50%;
   height: 10%;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-.contact {
+.contact{
   float: left;
 }
+
