@@ -138,7 +138,7 @@ h2 {
 #about-me h1 {
 
   font-size: 9rem;
-  margin-top: calc(7vh + 10%);
+  margin-top: 11%;
   color: #7df9cb;
   animation: fadeSlideIn 1.8s ease-out forwards;
   opacity: 0;
