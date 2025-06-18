@@ -1,6 +1,6 @@
 html{
   scroll-behavior: smooth;
-  font-size: 7px;
+  font-size: 12px;
 }
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -14,7 +14,7 @@ body {
 
 /* Navigation Bar */
 i{
-  margin-right: 7px;;
+  margin-right: 7px;
 }
 
 a{
@@ -30,16 +30,17 @@ a{
   position: fixed;
   width: 100%;
   z-index: 1000;
+  max-height: 100px;
  }
 
 img{
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 .topmenu {
   color: rgb(255, 255, 255);
-  padding: 20px; 
-  font-size: 2.5rem;
+  padding: 20px;
+  font-size: 2rem;
   text-decoration:none;
   margin-right: 2%;
 }
@@ -51,7 +52,7 @@ img{
 }
 
 .topdiv {
-  width: 50%;
+  width: 60%;
   text-align: right;
   float: right;
   margin-top: 20px;
@@ -60,7 +61,7 @@ img{
 
 .profile_name {
 
-  font-size: 3rem;
+  font-size: 2rem;
   float: left;
   padding-top: 0.5%;
   padding-left: 3%;
@@ -87,7 +88,7 @@ img{
 
 h2 {
   text-align: justify;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   float: left;
   color: #7df9cb;
@@ -99,7 +100,7 @@ h2 {
 
 .introduction {
   text-align: justify;
-  font-size: 7.5rem;
+  font-size: 6rem;
   text-align: center;
   float: left;
   margin-top: 10%;
@@ -137,15 +138,15 @@ h2 {
 
 #about-me h1 {
 
-  font-size: 9rem;
-  margin-top: 11%;
+  font-size: 6rem;
+  padding-top: 11%;
   color: #7df9cb;
   animation: fadeSlideIn 1.8s ease-out forwards;
   opacity: 0;
 }
 
 #about_me_text {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   width: 100%;
   color: white;
   animation: fadeSlideIn 1.8s ease-out forwards 1s;
@@ -165,8 +166,8 @@ h2 {
 .domain-bar {
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.04);
-  padding: 2rem;
-  padding-left: 5%;
+  padding: 1.6rem;
+  padding-left: 3%;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -189,7 +190,7 @@ h2 {
   width: fit-content;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding: 1rem 1.5rem;
   border: none;
   border-radius: 12px;
@@ -223,7 +224,7 @@ h2 {
 
 .skills-dropdown li {
   padding: 6px 12px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #fff;
   border-radius: 6px;
   transition: background 1s;
@@ -248,7 +249,7 @@ h2 {
   display: block;
   border-radius: 6px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   box-shadow: 0 3px 10px gray;
 }
 
@@ -273,18 +274,18 @@ h2 {
 }
 
 .project-card h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 2%;
 }
 
 .project-card li {
   text-indent: 0%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 3%;
 }
 #view_more{
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 3%;
   margin-top: 2%;
 }
