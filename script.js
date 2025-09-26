@@ -1,9 +1,16 @@
+console.log("Hi, If you are seeing this, it means you are curious enough to check the console. Feel free to connect with me on LinkedIn: https://www.linkedin.com/in/aditya-sharma-07a909290/");
+console.log("Also, you can suggest some cool tricks to add here!");
+console.log("Generate a pull request on github if you have something interesting in mind.");
+console.log("Have a great day! 😊");
+// Toggle dropdown visibility
+
 function toggleDropdown(button) {
   const dropdown = button.nextElementSibling;
   dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 
 
 }
+// Close dropdowns when clicking outside
 
 document.addEventListener("DOMContentLoaded", () => {
   let buttons = document.getElementsByClassName("domain-button");

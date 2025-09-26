@@ -96,6 +96,7 @@ h2 {
   margin-left: 3%;
   margin-top: 4%;
   margin-bottom: 2%;
+  animation: fadeSlideIn 1.8s ease-out forwards;
 }
 
 .introduction {
@@ -141,7 +142,7 @@ h2 {
   font-size: 6rem;
   padding-top: 11%;
   color: #7df9cb;
-  animation: fadeSlideIn 1.8s ease-out forwards;
+  animation: fadeSlideIn 0.5s ease-out forwards;
   opacity: 0;
 }
 
@@ -149,10 +150,9 @@ h2 {
   font-size: 1.6rem;
   width: 100%;
   color: white;
-  animation: fadeSlideIn 1.8s ease-out forwards 1s;
+  animation: fadeSlideIn 1s ease-out forwards 0.5s;
   opacity: 0;
 }
-
 
 
 .profile_image {
